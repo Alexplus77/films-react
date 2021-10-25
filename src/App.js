@@ -1,16 +1,12 @@
 import Stars from "components/stars";
 import "App.css";
 
-function App() {
-  const count = 5;
+const App = () => {
   return (
-    count > 5 ||
-    count < 1 || (
-      <div>
-        <Stars count={count} />
-      </div>
-    )
+    <div>
+      <Stars count={5} />
+    </div>
   );
-}
+};
 
 export default App;

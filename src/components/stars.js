@@ -3,18 +3,20 @@ import Star from "./star";
 import shortid from "shortid";
 
 const Stars = ({ count }) => {
-  let countStars = [];
-  while (countStars.length !== count) {
-    countStars.push(0);
-  }
+  const countStars = [];
+  countStars.fill(0, 0, count);
+
   return (
-    <ul className="card-body-stars u-clearfix">
-      {countStars.map((star) => (
-        <li key={shortid.generate()}>
-          <Star />
-        </li>
-      ))}
-    </ul>
+    count > 5 ||
+    count < 1 || (
+      <ul className="card-body-stars u-clearfix">
+        {countStars.map(() => (
+          <li key={shortid.generate()}>
+            <Star />
+          </li>
+        ))}
+      </ul>
+    )
   );
 };
 
