@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/films-react/static/css/main.f143c542.chunk.css",
+    "main.js": "/films-react/static/js/main.1ab35f34.chunk.js",
+    "main.js.map": "/films-react/static/js/main.1ab35f34.chunk.js.map",
+    "runtime-main.js": "/films-react/static/js/runtime-main.e65afe4d.js",
+    "runtime-main.js.map": "/films-react/static/js/runtime-main.e65afe4d.js.map",
+    "static/js/2.566a5283.chunk.js": "/films-react/static/js/2.566a5283.chunk.js",
+    "static/js/2.566a5283.chunk.js.map": "/films-react/static/js/2.566a5283.chunk.js.map",
+    "index.html": "/films-react/index.html",
+    "static/css/main.f143c542.chunk.css.map": "/films-react/static/css/main.f143c542.chunk.css.map",
+    "static/js/2.566a5283.chunk.js.LICENSE.txt": "/films-react/static/js/2.566a5283.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e65afe4d.js",
+    "static/js/2.566a5283.chunk.js",
+    "static/css/main.f143c542.chunk.css",
+    "static/js/main.1ab35f34.chunk.js"
+  ]
+}
