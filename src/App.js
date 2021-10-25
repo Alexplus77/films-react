@@ -1,11 +1,15 @@
 import Stars from "components/stars";
-import 'App.css';
+import "App.css";
 
 function App() {
-  const count=3
-
+  const count = 5;
   return (
-   <Stars count={count}/>
+    count > 5 ||
+    count < 1 || (
+      <div>
+        <Stars count={count} />
+      </div>
+    )
   );
 }
 
