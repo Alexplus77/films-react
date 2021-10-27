@@ -3,17 +3,17 @@ import Star from "./star";
 import shortid from "shortid";
 
 const Stars = ({ count }) => {
-  return (
-    count > 5 ||
-    count < 1 || (
-      <ul className="card-body-stars u-clearfix">
-        {[...new Array(count).fill(0)].map(() => (
-          <li key={shortid.generate()}>
-            <Star />
-          </li>
-        ))}
-      </ul>
-    )
+  const isValidRating = count > 5 || count < 1;
+  const countStars = [...new Array(count).fill(0)];
+
+  return isValidRating ? null : (
+    <ul className="card-body-stars u-clearfix">
+      {countStars.map(() => (
+        <li key={shortid.generate()}>
+          <Star />
+        </li>
+      ))}
+    </ul>
   );
 };
 
